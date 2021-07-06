@@ -1,0 +1,55 @@
+<!--// IMONIT (I'm-On-It) Alerts - RENDERER.HTML-->
+<!--//==========================================-->
+<!DOCTYPE html>
+<html id="zpage" class="hide">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=9,IE=10,IE=11,IE=edge"/>
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src * 'self';
+                    style-src * 'self' 'unsafe-inline';
+                    img-src * 'self';
+                    connect-src * 'self';
+                    media-src * 'self';
+                    script-src * 'self' 'unsafe-inline'; "/>
+    <link rel="stylesheet" href="../common/bootstrap/bootstrap.css">
+    <script src="../common/bootstrap/bootstrap.js"></script>
+    <link rel="stylesheet" href="../common/imonit/css/styles.css">
+    <title>IMONIT (I'm-On-It) Alerts</title>
+    <script>
+        var sw_editable = false
+        var loc = window.location.pathname.replace('.html', '.js');
+        var scr = document.createElement('script');
+        scr.setAttribute('src', loc);
+        document.head.appendChild(scr);
+    </script>
+    <script src="../common/imonit/js/renderer-utils.js"></script>
+</head>
+<body id="zbody">
+<div class="container-fluid border-top" id="ztop">
+    <section class="push-down-1q"></section>
+    <div id="header" class="draggy">
+        <div id="zsnooze" class="snooze">
+            <a id="snoozebtn" class="snoozebtn float-left"></a>
+            <select class="float-left" id="slt" name="slt">
+                <option value="0" id="opt0" class="hide"></option>
+                <option value="1" id="opt1" class="hide"></option>
+                <option value="2" id="opt2" class="hide"></option>
+                <option value="3" id="opt3" class="hide"></option>
+                <option value="4" id="opt4" class="hide"></option>
+            </select>
+        </div>
+        <div class="flexy text-start text-title" id="windowTitle"></div>
+    </div>
+    <div id="lines" class="push-down-1q">
+        <section class="flexy line-btn" id="txtbtn0"></section>
+        <section class="flexy line-btn" id="txtbtn1"></section>
+        <section class="flexy line-btn" id="txtbtn2"></section>
+    </div>
+    <div id="prog-bar">
+        <div id="prog-sw"></div>
+    </div>
+</div>
+</body>
+</html>
